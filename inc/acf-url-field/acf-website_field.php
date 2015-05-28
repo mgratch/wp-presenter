@@ -24,8 +24,6 @@ class acf_website_field_plugin
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_styles' ) );
 
-		add_action( 'admin_enqueue_scripts', array( $this, 'website_val_enqueue_styles_scripts' ) );
-
 
 	}
 
