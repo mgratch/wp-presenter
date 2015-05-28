@@ -174,6 +174,7 @@ function ds_fields( $fields ) {
 		'default'     => 'sky',
 		'priority'    => 10,
 		'choices'     => array(
+				'marc'            => trailingslashit( KIRKI_URL ) . 'assets/images/themes/wc-miami.png',
 				'wc-miami'        => trailingslashit( KIRKI_URL ) . 'assets/images/themes/wc-miami.png',
 				'sky'             => trailingslashit( KIRKI_URL ) . 'assets/images/themes/sky.png',
 				'beige'           => trailingslashit( KIRKI_URL ) . 'assets/images/themes/beige.png',
