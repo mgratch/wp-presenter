@@ -238,11 +238,11 @@ class acf_field_wysiwyg extends acf_field
 				
 				if( user_can_richedit() )
 				{
-					echo wp_richedit_pre( $field['value'] );
+					echo format_for_editor( $field['value'] );
 				} 
 				else
 				{
-					echo wp_htmledit_pre( $field['value'] );
+					echo format_for_editor( $field['value'] );
 				}
 				
 				?></textarea>

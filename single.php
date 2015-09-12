@@ -24,7 +24,7 @@ get_header();?>
 	$bkg_color = get_post_meta( get_the_ID(), 'background_color', true );
 	?>
 
-	<?php if( $vslides[0] == 'vertical_slide_yes' ) : ?>
+	<?php if( isset($vslides[0]) && $vslides[0] == 'vertical_slide_yes' ) : ?>
 		<section><?php // This OPENING tag will only exist if there are vertical slides that need to be nested with the main slide ?>
 	<?php endif;?>
 
@@ -114,7 +114,7 @@ get_header();?>
 	</section><?php // slide end ?>
 
 	<?php // vertical slides start here ?>
-	<?php if( $vslides[0] == 'vertical_slide_yes' ) : ?>
+	<?php if( isset($vslides[0]) && $vslides[0] == 'vertical_slide_yes' ) : ?>
 		<section>
 			<h2 class="title"><?php echo $vslide_title;?></h2>
 			<?php echo $vslide_content;?>
@@ -122,7 +122,7 @@ get_header();?>
 	<?php endif;?>
 	<?php // vertical slide ends here ?>
 
-	<?php if( $vslides[0] == 'vertical_slide_yes' ) : ?>
+	<?php if( isset($vslides[0]) && $vslides[0] == 'vertical_slide_yes' ) : ?>
 		</section><?php // This CLOSING tag will only exist if there are vertical slides that need to be nested with the main slide ?>
 	<?php endif ?>
 
