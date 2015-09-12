@@ -54,7 +54,7 @@ function wp_presenter_initialize_script() {
 			help:                   <?php if( '' == get_theme_mod( 'help' ) ) { echo 'true'; } else { echo $help; } ?>,
 			mouseWheel:             <?php if( '' == get_theme_mod( 'mousewheel_navigation' ) ) { echo 'false'; } else { echo $mouse; } ?>,
 			hideAddressBar:         <?php if( '' == get_theme_mod( 'hide_address_bar' ) ) { echo 'true'; } else {  echo $hide_address_bar; } ?>,
-			previewLinks:           <?php if( '' == get_theme_mod( 'preview_links' ) ) { echo 'false'; } else { echo $preview_links; } ?>,
+			previewLinks:           <?php if( '' == get_theme_mod( 'preview_links' ) ) { echo 'true'; } else { echo $preview_links; } ?>,
 			transition:             <?php if( '' == get_theme_mod( 'transitions' ) ) { echo '"default"'; } else { echo '"' . $transition . '"'; } ?>,
 			transitionSpeed:        <?php if( '' == get_theme_mod( 'transition_speed' ) ) { echo '"slow"'; } else { echo '"' . $transition_speed . '"'; } ?>,
 			backgroundTransition:   <?php if( '' == get_theme_mod( 'bkg_transitions' ) ) { echo '"default"'; } else { echo '"' . $bkg_transition . '"'; } ?>,
